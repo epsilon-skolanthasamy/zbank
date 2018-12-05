@@ -1,0 +1,158 @@
+.redemption-item {
+  background: $light-grey;
+  padding: 30px 0 60px;
+
+  .us-container {
+    padding: 0 10px;
+  }
+
+  .slick-next,
+  .slick-prev {
+    width: 36px;
+    height: 36px;
+
+    &:before {
+      display: none;
+    }
+  }
+
+  .slick-prev {
+    left: -75px;
+  }
+
+  .slick-next {
+    right: -75px;
+  }
+
+  .slick-disabled {
+    display: none !important;
+  }
+
+  h2 {
+
+    font-size: 30px;
+    color: $primary;
+    margin: 0;
+    margin-bottom: 10px;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  .r-content {
+    margin-bottom: 30px;
+    text-align: center;
+
+    .desc {
+      display: block;
+      font-size: 20px;
+      color: $primary;
+      vertical-align: middle;
+      font-weight: 600;
+      margin-bottom: 15px;
+      letter-spacing: -0.3px;
+    }
+
+    .arrow-icon {
+      vertical-align: middle;
+      margin: 0 10px;
+      display: inline-block;
+    }
+
+    .cta {
+      font-size: 22px;
+      color: $greyish-brown;
+      vertical-align: middle;
+    }
+
+  }
+
+  .redemption-carousel {
+
+    .item {
+      position: relative;
+      margin: 0 15px;
+      border-radius: 50%;
+      overflow: hidden;
+
+      img {
+        width: 100%;
+      }
+    }
+
+
+
+    .points {
+      font-size: 25px;
+      color: $white;
+      width: 100%;
+      text-align: center;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  @media (max-width: $screen-xs-max) {
+    .redemption-carousel {
+      text-align: center;
+
+      .item {
+        display: inline-block;
+        max-width: 236px;
+        margin-bottom: 20px;
+      }
+
+      .points {
+        font-size: 14px;
+      }
+
+      .slick-dots {
+        left: 0;
+        bottom: -50px;
+      }
+
+      .slick-prev { 
+        left: 32%;
+        bottom: -58px;
+        width: 21px;
+        height: 21px;
+      }
+
+      .slick-next { 
+        right: 35%;
+        bottom: -58px;
+        width: 21px;
+        height: 21px;
+      }
+
+      .slick-disabled {
+        display: block !important;
+      }
+    }
+  }
+
+  @media (min-width: $screen-md-min) {
+    padding: 50px 0 80px;
+
+    .us-container {
+      padding: 0 15px;
+    }
+
+    h2 {
+      font-size: 36px;
+    }
+
+    .r-content {
+
+      .desc {
+        font-size: 20px;
+        margin-bottom: 15px;
+      }
+
+      .cta {
+        font-size: 25px;
+      }
+    }
+  }
+}

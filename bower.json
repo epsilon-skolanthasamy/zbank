@@ -1,0 +1,40 @@
+{
+  "name": "us-bank",
+  "private": true,
+  "dependencies": {
+    "bootstrap-sass": "~3.3.5",
+    "modernizr": "~2.8.1",
+    "slick-carousel": "kenwheeler/slick#^1.8.1",
+    "ion.rangeSlider": "ionrangeslider#^2.2.0"
+  },
+  "overrides": {
+    "bootstrap-sass": {
+      "main": [
+        "assets/stylesheets/_bootstrap.scss",
+        "assets/fonts/bootstrap/*",
+        "assets/javascripts/bootstrap.js"
+      ]
+    },
+    "slick-carousel": {
+      "main": [
+        "slick/*",
+        "slick/fonts/",
+        "slick/slick.js",
+        "slick/slick.css",
+        "slick/slick.less",
+        "slick/slick.scss"
+      ]
+    },
+    "ion.rangeSlider": {
+      "main": [
+        "js/ion.rangeSlider.min.js",
+        "css/ion.rangeSlider.css",
+        "css/ion.rangeSlider.skinHTML5.css"
+      ]
+    }
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^5.2.0"
+  }
+}

@@ -1,0 +1,397 @@
+.rewards-profile {
+  margin-top: 40px;
+
+  p,
+  h2,
+  h3 {
+    padding: 0px;
+    margin: 0px;
+  }
+
+  h2 {
+    font-size: 50px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 0.74;
+    letter-spacing: 0.2px;
+    color: #0e1e69;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  h3 {
+    margin: 0px;
+    font-size: 30px;
+    line-height: 1.23;
+    letter-spacing: 0.1px;
+    text-align: left;
+    color: #0e1e69;
+    font-weight: bold;
+    padding-bottom: 18px;
+  }
+
+  .pad-15 {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .rewards-profile-welcome-text {
+    font-size: 26px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.42;
+    letter-spacing: -0.4px;
+    text-align: left;
+    color: #0e1e69;
+    margin-top: 30px;
+    margin-bottom: 0px;
+
+    span {
+      font-weight: bold;
+    }
+  }
+
+  .rewards-profile-date {
+    margin-top: 30px;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 2.64;
+    letter-spacing: -0.2px;
+    color: #0e1e69;
+    margin-bottom: 0px;
+  }
+
+
+  .rewards-profile-inner-container {
+    margin: 20px 0px 0px;
+    background-color: #f8f7f4;
+    padding: 24px 28px;
+
+
+    p {
+      font-size: 18px;
+      line-height: 25px;
+      letter-spacing: -0.3px;
+      color: #3e3e3e;
+    }
+
+    p.profile-info {
+      padding: 0px 0px 27px 0px;
+
+      a {
+        color: #3e3e3e;
+        text-decoration: underline;
+      }
+    }
+
+    span {
+      font-weight: bold;
+    }
+  }
+
+  .table-container {
+
+    overflow: auto;
+    margin-bottom: 40px;
+
+    .table-pad {
+      padding: 10px 30px 40px 30px;
+      background-color: #f8f7f4;
+    }
+  }
+
+  .rewards-profile-points-inner-container {
+    margin: 34px 0px 0px;
+    background-color: #f8f7f4;
+    padding: 24px 28px 38px 28px;
+
+    h3 {
+
+      padding-bottom: 18px;
+    }
+
+    .seemore {
+      padding: 20px 0px;
+    }
+
+    .Icon-wrapper {
+      background-color: #0e1e69;
+      border-radius: 50%;
+      width: 118px;
+      padding: 20px;
+      margin: auto;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .icon-text {
+      font-size: 20px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      padding-top: 12px;
+      letter-spacing: 0.1px;
+      text-align: center;
+      color: #0e1e69;
+
+      span {
+        font-size: 40px;
+        font-weight: bold;
+        line-height: 1;
+      }
+
+      span.next-quarter {
+        font-size: 12px;
+        font-weight: normal;
+        font-style: italic;
+        font-stretch: normal;
+        margin-top: 2px;
+        display: block;
+        letter-spacing: 0px;
+        text-align: center;
+        color: #0e1e69;
+      }
+    }
+  }
+
+  .rewards-profile-points-table {
+    margin: 34px 0px 0px;
+    background-color: #f8f7f4;
+    padding: 24px 28px 18px 28px;
+  }
+
+  .table-desc {
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: -0.3px;
+    text-align: left;
+    color: #3e3e3e;
+
+    span {
+      display: inline-block;
+      float: right;
+    }
+
+    a {
+      color: #2c61f8;
+      text-decoration: none;
+    }
+  }
+
+  .history-table {
+
+    tr:nth-of-type(odd) {
+      background-color: #c6c4c4;
+      padding: 19px 0px;
+    }
+
+    tr:nth-of-type(even) {
+      background-color: #dedcdc;
+      padding: 19px 0px;
+    }
+
+    td {
+      padding-top: 19px;
+      padding-bottom: 19px;
+      font-size: 14px;
+      font-weight: normal;
+      letter-spacing: -0.2px;
+      text-align: center;
+      color: #000000;
+    }
+
+    th {
+      background-color: #0e1e69;
+      font-size: 14px;
+      color: #ffffff;
+      font-weight: normal;
+      text-align: center;
+    }
+
+    img {
+      width: 20px;
+      height: auto;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .rewards-profile {
+    h2 {
+      font-size: 60px;
+      line-height: 1.02;
+      letter-spacing: 0.2px;
+    }
+
+    h3 {
+      padding-bottom: 12px;
+    }
+
+    .rewards-profile-welcome-text {
+      margin-top: 15px;
+      line-height: normal;
+    }
+
+    .history-table {
+      th {
+        vertical-align: middle;
+        font-size: 12px;
+      }
+
+      td {
+        font-size: 11px;
+      }
+    }
+
+    .table-container {
+
+      .table-pad {
+        padding: 0px 0px 40px 0px;
+      }
+    }
+
+    .rewards-profile-inner-container {
+      margin-top: 25px;
+      padding: 20px;
+    }
+
+    .rewards-profile-points-inner-container {
+      margin: 20px 0px 0px;
+      padding: 14px 28px 25px 20px;
+
+      .Icon-wrapper {
+        margin-top: 15px;
+      }
+
+      .summary-icons {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+.margin-gutter {
+  margin-bottom: 30px !important;
+}
+
+.nav-us {
+  @include clearfix;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  li {
+    float: left;
+    width: 50%;
+
+    a {
+      display: block;
+      padding: 20px 30px;
+      text-align: center;
+      text-decoration: none;
+      background: $white-three;
+      font-size: 18px;
+      border: 1px solid $primary;
+    }
+
+    &.active {
+      a {
+        background: $primary;
+        color: $white;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+.tab-order {
+  background: $white-three;
+  margin: 30px 0 40px;
+  padding: 28px;
+
+  p {
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: -0.3px;
+    text-align: left;
+    color: $greyish-brown-two;
+  }
+
+  .order-item {
+    border-bottom: 1px solid #afafaf;
+    .order-header {
+      background: #ddd;
+      padding: 8px 15px;
+      font-size: 13px;
+      cursor: pointer;
+    }
+
+    .order-summary {
+      padding: 15px;
+      font-size: 13px;
+      background: #fff;
+    }
+  }
+}
+
+@media (max-width: $screen-xs-max) {
+  .tab-order {
+    padding: 15px;
+  }
+
+  .nav-us { 
+
+    li {
+      float: left;
+      width: 50%;
+
+      a { 
+        padding: 20px 10px; 
+        font-size: 18px; 
+      } 
+    }
+  }
+}
+
+.usb-table {
+  .t-footer {
+    background: $white-three;
+  }
+}
+
+.margin-btm-20 {
+  margin-bottom: 20px;
+}
+
+.icon-toggle {
+  padding-right: 4px;
+}
+
+.display-ib {
+  display: inline-block;
+}
+
+.right {
+  display: none;
+}
+
+.bottom {
+  display: block;
+}
+
+.collapsed .right {
+  display: block;
+}
+
+.collpased .bottom {
+  display: none;
+}

@@ -1,0 +1,161 @@
+$icon-font-path: '../fonts/';
+
+// bower:scss
+@import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+@import "bower_components/slick-carousel/slick/slick-theme.scss";
+@import "bower_components/slick-carousel/slick/slick.scss";
+// endbower
+$primary: #0e1e69;
+$white : #ffffff;
+$white-two: #efefef;
+$white-three: #f8f7f4;
+$greyish: #b7b7b7;
+$light-grey: #e7e7e0;
+$dark-grey: #323333;
+$greyish-brown: #4d4d4d;
+$greyish-brown-two: #3e3e3e;
+$dark-slate-blue: #1f2c70;
+$faded-red: #d33744;
+$hover-color: #d62845;
+$alert-color: #eef7fb;
+$alert-text-color: #0074B3;
+
+
+/** Homepage **/
+@import "homepage/header";
+@import "homepage/hero";
+@import "homepage/redemption";
+@import "homepage/redeem";
+@import "homepage/recommendation";
+@import "homepage/footer";
+
+/** Rewards page **/
+@import "rewards-dashboard/rewards-dashboard";
+
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url('../fonts/HelveticaNeue.eot');
+  src: url('../fonts/HelveticaNeue.woff2') format('woff2'),
+    url('../fonts/HelveticaNeue.woff') format('woff'),
+    url('../fonts/HelveticaNeue.ttf') format('truetype'),
+    url('../fonts/HelveticaNeue.svg#HelveticaNeue') format('svg'),
+    url('../fonts/HelveticaNeue.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Museo';
+  src: url('../fonts/Museo500-Regular.eot');
+  src: url('../fonts/Museo500-Regular.woff2') format('woff2'),
+    url('../fonts/Museo500-Regular.woff') format('woff'),
+    url('../fonts/Museo500-Regular.ttf') format('truetype'),
+    url('../fonts/Museo500-Regular.svg#Museo500-Regular') format('svg'),
+    url('../fonts/Museo500-Regular.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, Lucida Grande, sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  margin: 0 auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+.us-container {
+  position: relative;
+  width: 100%;
+  padding: 0 15px;
+
+  @media (min-width: $screen-lg-min) {
+    width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+.slick-loading .slick-list {
+  background: none;
+}
+
+.affix {
+  position: fixed;
+  z-index: 55555;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.irs-bar,
+.irs-bar-edge {
+  background: $primary;
+  border-color: $primary;
+}
+
+.irs-from,
+.irs-to,
+.irs-single {
+  background: $primary;
+}
+
+.irs-slider {
+  top: 27px;
+  width: 22px;
+  height: 22px;
+  border: 2px solid $primary;
+  box-shadow:  none;
+  background: $white;
+}
+
+/***** select styling *****/
+.usb-select {
+  position: relative;
+  display: block;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+select{ cursor: pointer; }
+
+.usb-select select {
+  background-color: $white;
+  font-weight: bold;
+  color: $primary;
+  padding: 5px 15px;
+  width: 100%;
+  border: 1px solid $greyish;
+  margin: 0;
+  text-indent: 0.01px;
+  text-overflow: '';
+  /*Hiding the select arrow for firefox*/
+  -moz-appearance: none;
+  /*Hiding the select arrow for chrome*/
+  -webkit-appearance: none;
+  /*Hiding the select arrow default implementation*/
+  appearance: none;
+}
+
+/*Hiding the select arrow for IE10*/
+.usb-select select::-ms-expand {
+  display: none;
+}
+
+.usb-select::after {
+  content: "";
+  position: absolute;
+  pointer-events: none;
+  top: 12px;
+  right: 17px;
+  width: 5px;
+  height: 5px;
+  border: 1px solid transparent;
+  border-top-color: $primary;
+  border-right-color: $primary;
+  transform: rotate(135deg);
+}
+
+.usb-select select[disabled] {
+  color: rgba(0, 0, 0, .25);
+  cursor: not-allowed;
+}
