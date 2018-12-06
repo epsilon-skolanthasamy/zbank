@@ -1,11 +1,11 @@
 {
-  "name": "Z-bank",
+  "name": "z-bank",
   "private": true,
   "dependencies": {
     "bootstrap-sass": "~3.3.5",
     "modernizr": "~2.8.1",
     "slick-carousel": "kenwheeler/slick#^1.8.1",
-    "components-font-awesome": "^5.4.2",
+    "components-font-awesome": "^5.0.6",
     "ion.rangeSlider": "ionrangeslider#^2.2.0"
   },
   "overrides": {

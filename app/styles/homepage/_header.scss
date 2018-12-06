@@ -5,20 +5,18 @@
 }
 
 .logo {
-  width: 70%;
   float: left;
   padding-top: 12px;
   padding-bottom: 6px;
 
   a {
     float: left;
-    width: 80%;
     padding-top: 3px;
   }
 
   img {
     width: 100%;
-    max-width: 256px;
+    max-width: 115px;
   }
 
   .menu-trigger {
@@ -89,6 +87,55 @@
         text-decoration: none;
       }
     }
+    .dropdown-menu{
+      padding: 10px;
+      text-align: center;
+      top: 67px;
+      border-radius: 0;
+      background-color: $contentgrey;
+      border: none;
+      p{
+        font-size: 18px;
+        font-weight: 600;
+        color: $black;
+      }
+      .tier{
+        width: 40px;
+        height: 40px;
+        color: $white;
+        font-size: 30px;
+        line-height: 39px;
+        background-color: #a26f00;
+        margin-right: 10px;
+        border-radius: 50%;
+        padding: 3px 10px;
+        text-align:center;
+        &~span{
+          display: inline;
+          float: right;
+        }
+      }
+      li{
+        display: block;
+        margin: 10px 0 0;
+        a{
+          color: #0d90f0;
+          font-weight: 600;
+        }
+      }
+      @media screen and (max-width: 768px){
+        top:63px;
+      }
+    }
+  }
+  @media screen and (max-width: 768px){
+    .summary{
+      a{
+        .points{
+          font-size: 16px;
+        }
+      }
+    }
   }
 }
 .placeholder-header{
@@ -106,6 +153,9 @@
 @media (max-width: 992px) {
   .navbar-collapse {
     clear: both;
+  }
+  .header{
+    padding: 10px 0;
   }
 }
 

@@ -9,7 +9,7 @@
 		.banner-content{
 			position: absolute;
 			top: 50%;
-			transform: translate(0%, -50%);
+			transform: translate(0%, -70%);
 			width: 100%;
 			h1{
 				color: $white;
@@ -39,7 +39,35 @@
 				padding: 8px 15px;
 				color: $white;
 				display: inline-block;
+				font-weight: 600;
+				margin-top: 20px;
 			}
 		}
+	}
+	@media (max-width: 768px){
+		.banner-wrap{
+			img{
+				display: none;			
+			}
+			.banner-content{
+				padding: 20px 20px 30px;
+				position: relative;
+				background-color: $blue;
+				transform: none;
+				text-align: center;
+				h1{
+					font-size: 34px;
+					line-height: 40px;
+					&:after{
+					    transform: translateX(-50%);
+					    left: 50%;
+					}
+				}
+				.bg-red-btn{
+					width:100%;
+				}
+			}
+		}
+
 	}
 }

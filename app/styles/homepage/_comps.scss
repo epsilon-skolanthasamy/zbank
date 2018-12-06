@@ -1,0 +1,285 @@
+/*Welcome Box styles*/
+.welcome-box{
+	margin: 30px 0;
+	.content-box-bg{
+		background-color: $contentgrey;
+		padding: 20px 30px;
+		border-radius: 4px;
+		display: flex;
+		flex: 1 1 0;
+		align-items: center;
+		justify-content: space-around;
+		h2{
+			font-size: 33px;
+			span{
+				display: block;
+				font-weight: bold;
+			}
+		}
+		.current-points{
+			font-weight: bold;
+			font-size: 52px;
+			line-height: 40px;
+			text-align: center;
+			small{
+				display: block;
+				font-size: 18px;
+				line-height: 40px;
+				color: $dark-grey;
+				font-weight: 400;
+			}
+		}
+	}
+	@media screen and (max-width: 768px){
+		.content-box-bg{
+			display: block;
+			text-align: center;
+			div{
+				margin-bottom: 30px;
+			}
+		}
+	}
+}
+
+
+/* Loyalty Offers styles*/
+.loyalty-offers{
+	h2{
+		text-align: center;
+		margin-bottom: 30px;
+		a{
+			font-size: 16px;
+			line-height: 40px;
+			color: $primary;
+			text-decoration: underline;
+			vertical-align: middle;
+			display: inline-block;
+		}
+	}
+	.iconbox{
+		background-color: $contentgrey;
+		padding: 30px 20px;
+		margin: 20px 15px;
+		text-align: center;
+		img{
+			margin-bottom: 10px;
+			max-height: 70px;
+		}
+		h3{
+			margin-bottom: 25px;
+		}
+		p{
+			margin-bottom: 20px;
+		}
+		a{
+			display: inline-block;
+		}
+	}
+	@media screen and (max-width: 768px){
+		.flex-div{
+			display: block;
+		}
+		.iconbox{
+			p{
+				display: none;
+			}
+		}
+	}
+}
+
+/*Popular Categories*/
+.popular-categories{
+	h2{
+		text-align: center;
+		margin-bottom: 30px;
+		a{
+			font-size: 16px;
+			line-height: 40px;
+			color: $primary;
+			text-decoration: underline;
+			vertical-align: middle;
+			display: inline-block;
+		}
+	}
+	.categories-tiles{
+		.slick-slide{
+			margin: 0 10px;
+		}
+
+
+		.add-category{
+			position: relative;
+			text-align: center;
+			.cat-img{
+				position: relative;
+				i{
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+					font-size: 50px;
+					color: $white;
+				}
+			}
+		}
+		.category{
+			margin: 10px 15px;
+			.cat-img{
+				position: relative;
+				img{
+					width: 100%;
+				}
+					p{
+					color: $white;
+					font-weight: bold;
+					font-size: 18px;
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+				}
+			}
+			
+		}
+	}
+	@media screen and (max-width: 768px){
+		.slick-list{
+			margin-left: -50px;
+		}
+	}
+}
+
+/*Current Promotions*/
+.current-promotions{
+	h2{
+		text-align: center;
+		margin-bottom: 30px;
+		a{
+			font-size: 16px;
+			line-height: 40px;
+			color: $primary;
+			text-decoration: underline;
+			vertical-align: middle;
+			display: inline-block;
+		}
+	}
+	.current-promotions-carousel{
+		.item .image-tile{
+			border: 1px solid #b7b7b7;
+			background-color: $white;
+			margin: 0 10px 20px;
+			.img-wrap{
+				padding: 20px;
+				text-align: center;
+				position: relative;
+				img{
+					margin: 0 auto;
+				}
+				span.label{
+					position: absolute;
+					top: 0;
+					left: 0;
+					color: $white;
+					padding: 10px;
+					font-size: 14px;
+					border-radius: 0;
+					text-align:left;
+					background-image: url(../images/tag.png);
+					background-repeat: no-repeat;
+					background-size: contain;
+					width: 100%;
+				}
+			}
+			.img-content{
+				text-align: center;
+				background-color: $contentgrey;
+				padding: 15px 10px;
+				font-size: 18px;
+				.points{
+					color: $primary;
+					font-weight: 600;
+				}
+			}
+		}
+	}
+}
+
+/*Redeem points*/
+.redeem-points{
+	padding: 40px 0;
+	background-color: $contentgrey;
+	margin-top: 30px;
+	.content-wrap{
+		padding: 20px;
+		h2{
+			margin-bottom: 25px;
+			margin-top: 0;
+		}
+		p{
+			margin-bottom: 20px;
+		}
+		a{
+			display: inline-block;
+			margin-top: 10px;
+		}
+	}
+	.redeem-form{
+		label{
+			padding-left: 25px;
+			margin-bottom: 10px;
+			input{
+				opacity: 0;
+			}
+			span{
+				&:before{
+					content:"";
+					position: absolute;
+					left: 0;
+					top:0;
+					width: 20px;
+					height: 20px;
+					background-color: $white;
+					border: 1px solid $dark-grey;
+					z-index: 9;
+					border-radius: 50%;
+				}
+			}
+			&.checked{
+				font-weight: 600;
+			}
+			input:checked ~ span{
+				&:after{
+					content:"";
+					position: absolute;
+					left: 4px;
+					top:4px;
+					width: 12px;
+					height: 12px;
+					background-color: $primary;
+					z-index: 9;
+					border-radius: 50%;
+				}
+			}	
+		}
+		a{
+			margin-top: 30px;
+		}
+	}
+	.vertical-divider{
+		&:after{
+			content:"";
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			right: 0;
+			height: 100%;
+			width: 1px;
+			background-color: $greyish;
+		}
+		@media (max-width: 768px){
+			&:after{
+				display: none;
+			}
+		}
+	}
+}
