@@ -1,45 +1,7 @@
 /************* Header ***************/
-.header-sup {
-  background-color: $light-grey;
-
-  a {
-    position: relative;
-    padding: 6px 0px;
-    padding-left: 15px;
-    display: inline-block;
-    font-size: 12px;
-    font-weight: 500;
-    line-height: 1.5;
-    letter-spacing: -0.1px;
-    text-align: left;
-    color: $dark-grey;
-
-    &:before {
-      content: '';
-      position: absolute;
-      top: 9.5px;
-      left: 0;
-      border: 5px solid transparent;
-      border-right-color: $dark-grey;
-    }
-  }
-}
-
-a.back {
-  position: relative;
-
-  &:before {
-    content: '';
-    position: absolute;
-    top: 20px;
-    left: -5px;
-    border: 5px solid transparent;
-    border-right-color: $white;
-  }
-}
-
 .header {
-  background: $primary;
+  background: $bodygrey;
+  padding-top: 30px;
 }
 
 .logo {
@@ -80,59 +42,55 @@ a.back {
       height: 3px;
       border-radius: 3px;
       margin: 5px 0;
-      background: $white;
+      background: $black;
     }
   }
 }
 
 .nav-menu {
-
   ul {
     margin: 0;
     padding: 0;
     list-style: none;
-
     li {
-
-
       a {
         display: block;
         font-size: 14px;
         padding: 15px 10px;
         text-decoration: none;
-        color: $white;
+        color: $black;
+        font-weight: bold;
       }
     }
   }
 }
-
  
 .points-summary {
-  float: left;
-  width: 30%;
-  color: $white;
+  float: right;
+  color: $black;
   padding-top: 10px;
   padding-left: 10px;
-
-  .desc {
-    font-size: 14px;
-    text-align: center;
+  .summary{
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+    a{
+      color: $black;
+      .desc {
+        font-size: 14px;
+      }
+      .points {
+        display: block;
+        font-size: 20px;
+        font-weight: bold;
+        line-height: 20px;
+      }
+      &:hover{
+        text-decoration: none;
+      }
+    }
   }
-
-  .user {
-    display: block;
-    font-size: 12px;
-    text-align: center;
-  }
-
-  .points {
-    display: block;
-    font-size: 13px;
-    text-align: center;
-  }
-
 }
-
 .placeholder-header{
     position: relative;  
     color: black;
@@ -143,7 +101,6 @@ a.back {
   padding-right: 1px;
   padding-left: 0px;
   width: 100%;
-
 }
 
 @media (max-width: $screen-sm-max) {
@@ -156,7 +113,6 @@ a.back {
   .menu-trigger {
     display: none;
   }
-
   .nav-menu {
     float: left;
 
@@ -179,50 +135,14 @@ a.back {
   .logo {
     padding: 15px 40px 0 0;
     width: auto;
-
     a {
       float: none;
       width: 100%;
       padding-top: 0;
     }
-
-
-
   }
-
   /*** overrides **/
   .navbar-collapse {
     padding: 0;
-  }
-
-
-
-
-
-
-  .points-summary {
-    float: right;
-    width: auto;
-    padding: 15px 0;
-    margin-bottom: 0;
-  }
-
-  .desc {
-    display: block;
-  }
-
-
-
-}
-.usb-alert{
-  font-family: Museo;
-  background: $alert-color;
-  color: $alert-text-color;
-  border-radius: 0;
-  margin-bottom: 0;
-}
-@media (min-width: $screen-lg-min) {
-  .points-summary {
-    padding: 25px 0;
   }
 }

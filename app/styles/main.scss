@@ -1,12 +1,17 @@
 $icon-font-path: '../fonts/';
 
-// bower:scss
+/*// bower:scss*/
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 @import "bower_components/slick-carousel/slick/slick-theme.scss";
 @import "bower_components/slick-carousel/slick/slick.scss";
-// endbower
-$primary: #0e1e69;
-$white : #ffffff;
+
+/*// endbower*/
+$primary: #bd2323;
+$white: #ffffff;
+$bodygrey:#f7f7f7;
+$contentgrey:#e8e8e8;
+$black: #000000;
+
 $white-two: #efefef;
 $white-three: #f8f7f4;
 $greyish: #b7b7b7;
@@ -24,8 +29,6 @@ $alert-text-color: #0074B3;
 /** Homepage **/
 @import "homepage/header";
 @import "homepage/hero";
-@import "homepage/redemption";
-@import "homepage/redeem";
 @import "homepage/recommendation";
 @import "homepage/footer";
 
@@ -62,6 +65,7 @@ body {
   font-size: 15px;
   margin: 0 auto;
   -webkit-font-smoothing: antialiased;
+  background-color: $bodygrey;
 }
 
 .us-container {
