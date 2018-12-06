@@ -10,6 +10,36 @@
 			position: absolute;
 			top: 50%;
 			transform: translate(0%, -50%);
+			width: 100%;
+			h1{
+				color: $white;
+				font-size: 50px;
+				line-height: 60px;
+				letter-spacing: -0.5px;
+				font-family: "Avenir-Medium", "Open Sans";
+				position: relative;
+				padding-bottom: 18px;
+				&:after{
+					content:"";
+					position: absolute;
+					left: 0;
+					bottom: 0;
+					height: 6px;
+					width: 206px;
+					background-color: #0d90f0;
+				}
+			}
+			p{
+				color: $white;
+				font-size: 16px;
+				margin-top: 20px;
+			}
+			.bg-red-btn{
+				background-color: $primary;
+				padding: 8px 15px;
+				color: $white;
+				display: inline-block;
+			}
 		}
 	}
 }

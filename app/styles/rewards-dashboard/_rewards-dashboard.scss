@@ -281,7 +281,7 @@
 }
 
 .nav-us {
-  @include clearfix;
+  clear: both;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -343,7 +343,7 @@
   }
 }
 
-@media (max-width: $screen-xs-max) {
+@media (max-width: 768px) {
   .tab-order {
     padding: 15px;
   }

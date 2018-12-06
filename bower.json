@@ -1,10 +1,11 @@
 {
-  "name": "us-bank",
+  "name": "Z-bank",
   "private": true,
   "dependencies": {
     "bootstrap-sass": "~3.3.5",
     "modernizr": "~2.8.1",
     "slick-carousel": "kenwheeler/slick#^1.8.1",
+    "components-font-awesome": "^5.4.2",
     "ion.rangeSlider": "ionrangeslider#^2.2.0"
   },
   "overrides": {
@@ -16,16 +17,34 @@
       ]
     },
     "slick-carousel": {
-      "main": [
-        "slick/*",
+      "main": [ 
         "slick/fonts/",
         "slick/slick.js",
         "slick/slick.css",
-        "slick/slick.less",
-        "slick/slick.scss"
+        "slick/slick-theme.css"
+      ]
+    }, 
+    "components-font-awesome":{
+      "main": [
+        "css/fontawesome.css",
+        "webfonts/fa-brands-400.eot",
+        "webfonts/fa-brands-400.woff2",
+        "webfonts/fa-brands-400.woff",
+        "webfonts/fa-brands-400.ttf",
+        "webfonts/fa-brands-400.svg",
+        "webfonts/fa-regular-400.eot",
+        "webfonts/fa-regular-400.woff2",
+        "webfonts/fa-regular-400.woff",
+        "webfonts/fa-regular-400.ttf",
+        "webfonts/fa-regular-400.svg",
+        "webfonts/fa-solid-900.eot",
+        "webfonts/fa-solid-900.woff2",
+        "webfonts/fa-solid-900.woff",
+        "webfonts/fa-solid-900.ttf",
+        "webfonts/fa-solid-900.svg"
       ]
     },
-    "ion.rangeSlider": {
+     "ion.rangeSlider": {
       "main": [
         "js/ion.rangeSlider.min.js",
         "css/ion.rangeSlider.css",

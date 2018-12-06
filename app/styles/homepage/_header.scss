@@ -103,13 +103,13 @@
   width: 100%;
 }
 
-@media (max-width: $screen-sm-max) {
+@media (max-width: 992px) {
   .navbar-collapse {
     clear: both;
   }
 }
 
-@media (min-width: $screen-sm-min) {
+@media (min-width: 768px) {
   .menu-trigger {
     display: none;
   }
@@ -131,7 +131,7 @@
   }
 }
 
-@media (min-width: $screen-md-min) {
+@media (min-width: 992px) {
   .logo {
     padding: 15px 40px 0 0;
     width: auto;
