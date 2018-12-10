@@ -1,0 +1,141 @@
+.login-register {
+  position: relative;
+  overflow:hidden;
+  .form-group{
+  	position: relative;
+  }
+  img {
+    width: 100%;
+    max-width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .rewards {
+    font-size: 12px;
+    padding: 10px 0;
+    text-align: center;
+    a {
+      color: #202221;
+    }
+  }
+  .banner-content {
+    width: 100%;
+  }
+  .form-parent {
+    background: $white;
+    background: rgba(255, 255, 255, 0.88);
+    padding: 30px;
+    margin:50px 0;
+
+    h2 {
+      text-transform: capitalize;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    label {
+      text-transform: capitalize;
+    }
+
+    select {
+      width: 100%;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      text-indent: 1px;
+      text-overflow: '';
+      padding: 13px;
+
+    }
+
+    .signup-links {
+      text-align: center;
+      font-weight: 600;
+
+      a {
+        color: #1594e1;
+
+      }
+
+    }
+
+    span {
+      color: #202221;
+    }
+    .glyphicon {
+    	position: absolute;
+        top: 41px;
+ 		right:23px;	
+    }
+  }
+
+  button {
+    background-color: #bd1c24;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: capitalize;
+    margin: 22px 0;
+    width: 100%;
+    border-style: none;
+    color: $white;
+    padding: 25px 0;
+  }
+
+  ::-webkit-input-placeholder {
+    color: #313131;
+    opacity: 1;
+    font-size: 14px;
+  }
+
+  :-ms-input-placeholder {
+    color: #313131;
+    opacity: 1;
+    font-size: 14px;
+  }
+
+  ::-ms-input-placeholder {
+    color: #313131;
+    opacity: 1;
+    font-size: 14px;
+  }
+
+  ::placeholder {
+    color: #313131;
+    opacity: 1;
+    font-size: 14px;
+  }
+
+  .form-control {
+    padding: 23px;
+  }
+
+  input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+  }
+
+  .label-text {
+    display: inline-block;
+    margin-left: 10px;
+    margin-top: 3px;
+  }
+  @media screen and (max-width:768px){
+  	img{
+  		height: 100%;
+  		width: auto;
+  		max-width: none;
+  	}
+  	.form-parent{
+  		margin: 50px 20px;
+  	}
+  }
+  @media (min-width: 1024px) and (max-width:1200px){
+	  	img{
+	  		height: 100%;
+	  		width: auto;
+	  		max-width: none;
+	  	}
+	}
+}
